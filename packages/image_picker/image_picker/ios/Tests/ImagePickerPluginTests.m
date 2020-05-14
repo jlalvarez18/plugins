@@ -23,7 +23,7 @@
     return;
   }
   FLTImagePickerPlugin *plugin =
-      [[FLTImagePickerPlugin alloc] initWithViewController:[UIViewController new]];
+      [[FLTImagePickerPlugin alloc] init];
   FlutterMethodCall *call =
       [FlutterMethodCall methodCallWithMethodName:@"pickImage"
                                         arguments:@{@"source" : @(0), @"cameraDevice" : @(0)}];
@@ -39,7 +39,7 @@
     return;
   }
   FLTImagePickerPlugin *plugin =
-      [[FLTImagePickerPlugin alloc] initWithViewController:[UIViewController new]];
+      [[FLTImagePickerPlugin alloc] init];
   FlutterMethodCall *call =
       [FlutterMethodCall methodCallWithMethodName:@"pickImage"
                                         arguments:@{@"source" : @(0), @"cameraDevice" : @(1)}];
@@ -55,7 +55,7 @@
     return;
   }
   FLTImagePickerPlugin *plugin =
-      [[FLTImagePickerPlugin alloc] initWithViewController:[UIViewController new]];
+      [[FLTImagePickerPlugin alloc] init];
   FlutterMethodCall *call =
       [FlutterMethodCall methodCallWithMethodName:@"pickVideo"
                                         arguments:@{@"source" : @(0), @"cameraDevice" : @(0)}];
@@ -71,7 +71,7 @@
     return;
   }
   FLTImagePickerPlugin *plugin =
-      [[FLTImagePickerPlugin alloc] initWithViewController:[UIViewController new]];
+      [[FLTImagePickerPlugin alloc] init];
   FlutterMethodCall *call =
       [FlutterMethodCall methodCallWithMethodName:@"pickVideo"
                                         arguments:@{@"source" : @(0), @"cameraDevice" : @(1)}];
@@ -85,7 +85,7 @@
 #pragma mark - Test video duration
 - (void)testPickingVideoWithDuration {
   FLTImagePickerPlugin *plugin =
-      [[FLTImagePickerPlugin alloc] initWithViewController:[UIViewController new]];
+      [[FLTImagePickerPlugin alloc] init];
   FlutterMethodCall *call = [FlutterMethodCall
       methodCallWithMethodName:@"pickVideo"
                      arguments:@{@"source" : @(0), @"cameraDevice" : @(0), @"maxDuration" : @95}];
@@ -97,7 +97,7 @@
 
 - (void)testPluginPickImageSelectMultipleTimes {
   FLTImagePickerPlugin *plugin =
-      [[FLTImagePickerPlugin alloc] initWithViewController:[UIViewController new]];
+      [[FLTImagePickerPlugin alloc] init];
   FlutterMethodCall *call =
       [FlutterMethodCall methodCallWithMethodName:@"pickImage"
                                         arguments:@{@"source" : @(0), @"cameraDevice" : @(0)}];
