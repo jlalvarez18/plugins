@@ -1,3 +1,7 @@
+## 0.6.6+3
+
+* Updated iOS podspec to support building for iPhone simulators.
+
 ## 0.6.6+2
 
 * Update lower bound of dart dependency to 2.1.0.
